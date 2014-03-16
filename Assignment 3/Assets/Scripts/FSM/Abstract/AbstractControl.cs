@@ -15,10 +15,17 @@ public abstract class AbstractControl : MonoBehaviour {
     /// </summary>
     void Update()
     {
+        GlobalUpdate();
+
         if (stateMachine == null)
             throw new System.ArgumentException("State machine cannot be null", "original");
 
         stateMachine.Update();
+    }
+
+    void FixedUpdate()
+    {
+        stateMachine.FixedUpdate();
     }
 
     /// <summary>
