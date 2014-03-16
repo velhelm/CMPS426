@@ -66,6 +66,11 @@ public abstract class AbstractStateMachine {
         }
 	}
 
+    public virtual void FixedUpdate()
+    {
+        currentState.FixedUpdate();
+    }
+
     /// <summary>
     /// Transitions from one state to another. Should only ever be called
     /// from the state machine's update function.

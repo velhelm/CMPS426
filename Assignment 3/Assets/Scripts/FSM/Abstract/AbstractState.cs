@@ -47,6 +47,8 @@ public abstract class AbstractState {
 	/// </summary>
     public abstract void Update();
 
+    public abstract void FixedUpdate();
+
     /// <summary>
     /// This is where it is determined if a transition is required. Perform any calculations
     /// required, or access global control information to determine transition eligibility.
