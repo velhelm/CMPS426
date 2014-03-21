@@ -41,7 +41,9 @@ public class PlayerControl : MonoBehaviour {
         }
 
 		//Color differentiation used in seek
-		if (renderer.material.color != Color.black && renderer.material.color != startColor) 
+		if (renderer.material.color != Color.black 
+		    && renderer.material.color != Color.grey
+		    && renderer.material.color != startColor) 
 		{ renderer.material.color = startColor; }
     }
 }

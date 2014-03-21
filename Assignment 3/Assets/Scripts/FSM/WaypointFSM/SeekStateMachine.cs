@@ -24,4 +24,7 @@ public class SeekStateMachine : AbstractStateMachine {
 			base.Transition(newId);
 		}
 	}
+
+	public string GetCurrentStateName() 
+	{ return base.currentState.name; }
 }

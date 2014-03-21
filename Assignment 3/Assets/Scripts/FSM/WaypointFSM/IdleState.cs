@@ -14,6 +14,7 @@ public class IdleState : AbstractState {
 
 	public override void Enter() {
 		Debug.Log ("Entering Idle State");
+		name = "Idle";
 	}
 
 	public override void Update() {

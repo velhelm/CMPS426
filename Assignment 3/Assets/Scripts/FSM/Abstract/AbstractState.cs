@@ -13,6 +13,7 @@ public abstract class AbstractState {
     // ID that identifies the state in a state machine.
     private int id;
     public int ID { get { return id; } }
+	public string name;
 
     /* Reference to the controller that instantiated and controls this state.
      * A reference is given to each state so that they all have access to global data for the object
