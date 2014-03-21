@@ -9,9 +9,9 @@ using System.Collections.Generic;
 /// </summary>
 public class StateMachine {
     // Private dictionary of states.
-    private Dictionary<int, AbstractState> states;
+    protected Dictionary<int, AbstractState> states;
     // Reference to current state.
-    private AbstractState currentState;
+    protected AbstractState currentState;
     // ID of default state. Obviously.
     private int defaultStateId;
 
@@ -76,7 +76,7 @@ public class StateMachine {
     /// from the state machine's update function.
     /// </summary>
     /// <param name="id">ID mapped to the state in the Dictionary.</param>
-    private void Transition(int id)
+    protected void Transition(int id)
     {
         // Call current state's Exit method. Base case: Initial transition.
         if (currentState != null) currentState.Exit();

@@ -7,7 +7,7 @@ using System.Collections;
 /// methods of their machine.
 /// </summary>
 public abstract class AbstractControl : MonoBehaviour {
-    private StateMachine stateMachine;
+    protected StateMachine stateMachine;
 
     void Awake()
     {
