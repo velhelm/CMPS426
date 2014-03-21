@@ -7,7 +7,12 @@ using System.Collections;
 /// methods of their machine.
 /// </summary>
 public abstract class AbstractControl : MonoBehaviour {
-    protected AbstractStateMachine stateMachine;
+    private StateMachine stateMachine;
+
+    void Awake()
+    {
+        stateMachine = CreateMachine();
+    }
 
     /// <summary>
     /// By default the control updates the state machine on each update. This ensures
@@ -29,11 +34,17 @@ public abstract class AbstractControl : MonoBehaviour {
     }
 
     /// <summary>
+    /// Required to implement. This guarantees that the
+    /// state machine will get created.
+    /// </summary>
+    public abstract StateMachine CreateMachine();
+
+    /// <summary>
     /// Depending on the type of GameObject, there might be updates required regardless of state.
     /// In this case, GlobalUpdate should be called to handle such update logic. This is also where
     /// transition-pertinent logic can be calculated.
     /// 
     /// This method
     /// </summary>
-    public virtual void GlobalUpdate() { } 
+    public virtual void GlobalUpdate() { }
 }

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SeekStateMachine : AbstractStateMachine {
+public class SeekStateMachine : StateMachine {
 
 	/// <summary>
 	/// Essentially the same as the base update, except this one

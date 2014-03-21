@@ -4,14 +4,24 @@ using System.Collections.Generic;
 
 public class SeekControl : AbstractControl {
 
-	public void Awake() {
-		AbstractState idle = new IdleState (0, this);
-		AbstractState seek = new SeekState (1, this);
-		AbstractState pursuit = new PursuitState (2, this);
+    public enum States
+    {
+        DEFAULT,
+        SEEK,
+        PURSUIT
+    }
 
-		stateMachine = new SeekStateMachine ();
-		stateMachine.AddDefaultState (idle);
-		stateMachine.AddState (seek);
-		stateMachine.AddState (pursuit);
-	}
+    public override StateMachine CreateMachine()
+    {
+        AbstractState idle = new IdleState((int)States.DEFAULT, this);
+        AbstractState seek = new SeekState((int)States.SEEK, this);
+        AbstractState pursuit = new PursuitState((int)States.PURSUIT, this);
+
+        SeekStateMachine stateMachine = new SeekStateMachine();
+        stateMachine.AddDefaultState(idle);
+        stateMachine.AddState(seek);
+        stateMachine.AddState(pursuit);
+
+        return stateMachine;
+    }
 }

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 /// responsible for, as well as making transitions whenever they are necessary. The machine uses a Dictionary
 /// to keep track of states.
 /// </summary>
-public abstract class AbstractStateMachine {
+public class StateMachine {
     // Private dictionary of states.
     protected Dictionary<int, AbstractState> states;
     // Reference to current state.
@@ -15,7 +15,7 @@ public abstract class AbstractStateMachine {
     // ID of default state. Obviously.
     private int defaultStateId;
 
-    public AbstractStateMachine() 
+    public StateMachine() 
     {
         states = new Dictionary<int, AbstractState>();
     }
