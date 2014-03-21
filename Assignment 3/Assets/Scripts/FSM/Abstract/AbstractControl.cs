@@ -7,7 +7,7 @@ using System.Collections;
 /// methods of their machine.
 /// </summary>
 public abstract class AbstractControl : MonoBehaviour {
-    private AbstractStateMachine stateMachine;
+    protected AbstractStateMachine stateMachine;
 
     /// <summary>
     /// By default the control updates the state machine on each update. This ensures

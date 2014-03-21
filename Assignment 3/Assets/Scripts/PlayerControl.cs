@@ -7,6 +7,10 @@ using System.Collections;
 /// </summary>
 public class PlayerControl : MonoBehaviour {
     public float velocity;
+	public Color startColor;
+
+	void Awake ()
+	{ startColor = renderer.material.color; }
 
     void FixedUpdate()
     {
@@ -35,5 +39,9 @@ public class PlayerControl : MonoBehaviour {
         {
             transform.position = new Vector3(Bounds.X_MAX, transform.position.y, 0.0f);
         }
+
+		//Color differentiation used in seek
+		if (renderer.material.color != Color.black && renderer.material.color != startColor) 
+		{ renderer.material.color = startColor; }
     }
 }
