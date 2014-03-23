@@ -34,6 +34,8 @@ public class AdvanceWayPntControl : AbstractControl {
 		}
 	}
 
+	// These two things are needed for the fact that two player controllers are needed for
+	// this scene.
 	public GameObject GetPlayer1()
 	{
 		return GameObject.FindGameObjectWithTag("Player1");

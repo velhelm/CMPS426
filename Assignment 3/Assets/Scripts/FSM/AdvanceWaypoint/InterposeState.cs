@@ -29,6 +29,7 @@ public class InterposeState : AbstractState {
 	
 	public override void FixedUpdate()
 	{
+		// tempVector will be the destination for this object.
 		Vector3 tempVector;
 		tempVector.x = (player1.transform.position.x + player2.transform.position.x) / 2;
 		tempVector.y = (player1.transform.position.y + player2.transform.position.y) / 2;
@@ -50,6 +51,7 @@ public class InterposeState : AbstractState {
 		else
 			direction_z = -1;
 		
+		// Move the object towards the desired position.
 		if(Mathf.Abs(tempVector.x - transform.position.x) > 10)
 		{
 			velocity.x = 3.0f * direction_x;
@@ -62,12 +64,14 @@ public class InterposeState : AbstractState {
 			velocity.x = direction_x;
 		else
 		{
+			// If object is within range, go ahead and snap it into place.
 			velocity.x = 0;
 			Vector3 placeIt = transform.position;
 			placeIt.x = tempVector.x;
 			transform.position = placeIt;
 		}
 		
+		// Move the object towards the desired position.
 		if(Mathf.Abs(tempVector.y - transform.position.y) > 10)
 		{
 			velocity.y = 3.0f * direction_y;
@@ -80,12 +84,13 @@ public class InterposeState : AbstractState {
 			velocity.y = direction_y;
 		else
 		{
+			// If object is within range, go ahead and snap it into place.
 			velocity.y = 0;
 			Vector3 placeIt = transform.position;
 			placeIt.y = tempVector.y;
 			transform.position = placeIt;
 		}
-		
+		// Move the object towards the desired position.
 		if(Mathf.Abs(tempVector.z - transform.position.z) > 10)
 		{
 			velocity.z = 3.0f * direction_z;
@@ -98,6 +103,7 @@ public class InterposeState : AbstractState {
 			velocity.z = direction_z;
 		else
 		{
+			// If object is within range, go ahead and snap it into place.
 			velocity.z = 0;
 			Vector3 placeIt = transform.position;
 			placeIt.z = tempVector.z;
