@@ -13,7 +13,9 @@ public class EvasiveAIControl : AbstractControl {
     public override StateMachine CreateMachine()
     {
         StateMachine machine = new StateMachine();
-        machine.AddDefaultState(new FleeState((int)States.FLEE, this));
+        machine.AddDefaultState(new EvadeState((int)States.EVADE, this));
+        machine.AddState(new FleeState((int)States.FLEE, this));
+
         return machine;
     }
 
@@ -38,5 +40,10 @@ public class EvasiveAIControl : AbstractControl {
     public Transform GetPlayerTransform()
     {
         return GameObject.FindGameObjectWithTag("Player").transform;
+    }
+
+    public Rigidbody GetPlayerRigidbody()
+    {
+        return GameObject.FindGameObjectWithTag("Player").rigidbody;
     }
 }

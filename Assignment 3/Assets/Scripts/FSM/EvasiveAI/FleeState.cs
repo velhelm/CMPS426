@@ -13,6 +13,8 @@ public class FleeState : AbstractState {
         player = ((EvasiveAIControl)Controller).GetPlayerTransform();
         position = Controller.transform;
         rigidbody = Controller.rigidbody;
+
+        GameObject.FindGameObjectWithTag("StateHeader").GetComponent<GUIText>().text = "Flee State";
     }
 
     public override void Exit()
@@ -33,5 +35,11 @@ public class FleeState : AbstractState {
             + rigidbody.velocity;
     }
 
-    public override int CheckTransition() { return ID; }
+    public override int CheckTransition() 
+    { 
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+            return (int) EvasiveAIControl.States.EVADE;
+
+        return ID; 
+    }
 }
