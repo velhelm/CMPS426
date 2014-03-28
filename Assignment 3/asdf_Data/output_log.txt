@@ -1,0 +1,93 @@
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvd3dum.dll 9.18.13.1090]
+    Renderer: NVIDIA Quadro 2000
+    Vendor:   NVIDIA
+    VRAM:     978 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\wrb4790\Documents\GitHub\CMPS426\Assignment 3\asdf_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\wrb4790\Documents\GitHub\CMPS426\Assignment 3\asdf_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\wrb4790\Documents\GitHub\CMPS426\Assignment 3\asdf_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\wrb4790\Documents\GitHub\CMPS426\Assignment 3\asdf_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\wrb4790\Documents\GitHub\CMPS426\Assignment 3\asdf_Data\Managed\HOTween.dll (this message is harmless)
+Loading C:\Users\wrb4790\Documents\GitHub\CMPS426\Assignment 3\asdf_Data\Managed\HOTween.dll into Unity Child Domain
+- Completed reload, in  0.049 seconds
+desktop: 1920x1200 59Hz; virtual: 3120x1920 at -1200,-451
+<RI> Initializing input.
+<RI> Input initialized.
+HandleD3DDeviceLost
+  HandleD3DDeviceLost: needs reset, doing it
+FullResetD3DDevice
+ResetD3DDevice
+dev->Reset
+D3Dwindow device not lost anymore
+UnloadTime: 0.428972 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 230.
+Total: 1.027738 ms (FindLiveObjects: 0.033787 ms CreateObjectMapping: 0.016679 ms MarkObjects: 0.197592 ms  DeleteObjects: 0.004276 ms)
+
+UnloadTime: 0.618011 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 186.
+Total: 1.009775 ms (FindLiveObjects: 0.010264 ms CreateObjectMapping: 0.008553 ms MarkObjects: 0.227958 ms  DeleteObjects: 0.003421 ms)
+
+UnloadTime: 0.510661 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 187.
+Total: 0.993523 ms (FindLiveObjects: 0.019673 ms CreateObjectMapping: 0.023522 ms MarkObjects: 0.183906 ms  DeleteObjects: 0.046190 ms)
+
+UnloadTime: 0.579091 ms
+Actor::updateMassFromShapes: Compute mesh inertia tensor failed for one of the actor's mesh shapes! Please change mesh geometry or supply a tensor manually!
+ 
+(Filename: ..\..\Physics\src\NpActor.cpp Line: 134)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 189.
+Total: 1.152195 ms (FindLiveObjects: 0.010692 ms CreateObjectMapping: 0.009409 ms MarkObjects: 0.228386 ms  DeleteObjects: 0.080833 ms)
+
+UnloadTime: 0.495692 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 193.
+Total: 0.879329 ms (FindLiveObjects: 0.010264 ms CreateObjectMapping: 0.009836 ms MarkObjects: 0.231807 ms  DeleteObjects: 0.019673 ms)
+
+UnloadTime: 0.561556 ms
+Actor::updateMassFromShapes: Compute mesh inertia tensor failed for one of the actor's mesh shapes! Please change mesh geometry or supply a tensor manually!
+ 
+(Filename: ..\..\Physics\src\NpActor.cpp Line: 134)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 193.
+Total: 1.119691 ms (FindLiveObjects: 0.009836 ms CreateObjectMapping: 0.026089 ms MarkObjects: 0.292112 ms  DeleteObjects: 0.086820 ms)
+
+UnloadTime: 0.458910 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 186.
+Total: 0.960163 ms (FindLiveObjects: 0.011119 ms CreateObjectMapping: 0.009409 ms MarkObjects: 0.285696 ms  DeleteObjects: 0.018390 ms)
+
+UnloadTime: 0.368668 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 192.
+Total: 0.934929 ms (FindLiveObjects: 0.011119 ms CreateObjectMapping: 0.009409 ms MarkObjects: 0.256186 ms  DeleteObjects: 0.025233 ms)
+
+HandleD3DDeviceLost
+  HandleD3DDeviceLost: needs reset, doing it
+FullResetD3DDevice
+ResetD3DDevice
+dev->Reset
+D3Dwindow device not lost anymore
+HandleD3DDeviceLost
+  HandleD3DDeviceLost: needs reset, doing it
+FullResetD3DDevice
+ResetD3DDevice
+dev->Reset
+D3Dwindow device not lost anymore

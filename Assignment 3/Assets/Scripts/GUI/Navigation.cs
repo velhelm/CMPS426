@@ -33,12 +33,13 @@ public class Navigation : MonoBehaviour {
 
         GUILayout.BeginVertical();
 
-        if (GUILayout.Button("Main Menu", wrapStyle, GUILayout.Height(AREA_HEIGHT / 6.5f))) Application.LoadLevel("Main");
-		if (GUILayout.Button("Waypoint Steering", wrapStyle, GUILayout.Height(AREA_HEIGHT / 6.5f))) Application.LoadLevel("WaypointSteering");
-		if (GUILayout.Button("Advanced Waypoint Steering", wrapStyle, GUILayout.Height(AREA_HEIGHT / 6.5f))) Application.LoadLevel("AdvancedWaypointSteering");
-		if (GUILayout.Button("Evasive Steering", wrapStyle, GUILayout.Height(AREA_HEIGHT / 6.5f))) Application.LoadLevel("EvasiveSteering");
-		if (GUILayout.Button("Other Steering", wrapStyle, GUILayout.Height(AREA_HEIGHT / 6.5f))) Application.LoadLevel("OtherSteering");
-		if (GUILayout.Button("Group Behaviors", wrapStyle, GUILayout.Height(AREA_HEIGHT / 6.5f))) Application.LoadLevel("GroupBehaviors");
+        if (GUILayout.Button("Main Menu", wrapStyle, GUILayout.Height(AREA_HEIGHT / 7.5f))) Application.LoadLevel("Main");
+		if (GUILayout.Button("Waypoint Steering", wrapStyle, GUILayout.Height(AREA_HEIGHT / 7.5f))) Application.LoadLevel("WaypointSteering");
+		if (GUILayout.Button("Advanced Waypoint Steering", wrapStyle, GUILayout.Height(AREA_HEIGHT / 7.5f))) Application.LoadLevel("AdvancedWaypointSteering");
+		if (GUILayout.Button("Evasive Steering", wrapStyle, GUILayout.Height(AREA_HEIGHT / 7.5f))) Application.LoadLevel("EvasiveSteering");
+		if (GUILayout.Button("Other Steering", wrapStyle, GUILayout.Height(AREA_HEIGHT / 7.5f))) Application.LoadLevel("OtherSteering - Copy");
+		if (GUILayout.Button("Group Behaviors", wrapStyle, GUILayout.Height(AREA_HEIGHT / 7.5f))) Application.LoadLevel("GroupBehaviors");
+		if (GUILayout.Button("Wander", wrapStyle, GUILayout.Height(AREA_HEIGHT / 7.5f))) Application.LoadLevel("Wander");
 
         GUILayout.EndVertical();
 
